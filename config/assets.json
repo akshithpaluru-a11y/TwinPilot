@@ -1,0 +1,85 @@
+{
+  "assets": [
+    {
+      "id": "black_bottle",
+      "display_name": "black bottle",
+      "type": "bottle",
+      "color": "black",
+      "default_size": "medium",
+      "aliases": ["bottle", "water bottle", "dark object"],
+      "cyberwave_ref": {"asset_key": "props/black_bottle"}
+    },
+    {
+      "id": "blue_cup",
+      "display_name": "blue cup",
+      "type": "cup",
+      "color": "blue",
+      "default_size": "medium",
+      "aliases": ["cup", "mug"],
+      "cyberwave_ref": {"asset_key": "props/blue_cup"}
+    },
+    {
+      "id": "red_cube",
+      "display_name": "red cube",
+      "type": "cube",
+      "color": "red",
+      "default_size": "small",
+      "aliases": ["cube", "block"],
+      "cyberwave_ref": {"asset_key": "props/red_cube"}
+    },
+    {
+      "id": "green_block",
+      "display_name": "green block",
+      "type": "block",
+      "color": "green",
+      "default_size": "small",
+      "aliases": ["green block", "block"],
+      "cyberwave_ref": {"asset_key": "props/green_block"}
+    },
+    {
+      "id": "gray_tray",
+      "display_name": "gray tray",
+      "type": "tray",
+      "color": "gray",
+      "default_size": "large",
+      "aliases": ["tray", "drop tray"],
+      "cyberwave_ref": {"asset_key": "props/gray_tray"}
+    },
+    {
+      "id": "left_marker",
+      "display_name": "left zone marker",
+      "type": "marker",
+      "color": "yellow",
+      "default_size": "small",
+      "aliases": ["left marker", "left zone"],
+      "cyberwave_ref": {"asset_key": "markers/left_zone"}
+    },
+    {
+      "id": "center_marker",
+      "display_name": "center zone marker",
+      "type": "marker",
+      "color": "yellow",
+      "default_size": "small",
+      "aliases": ["center marker", "center zone", "middle zone"],
+      "cyberwave_ref": {"asset_key": "markers/center_zone"}
+    },
+    {
+      "id": "right_marker",
+      "display_name": "right zone marker",
+      "type": "marker",
+      "color": "yellow",
+      "default_size": "small",
+      "aliases": ["right marker", "right zone"],
+      "cyberwave_ref": {"asset_key": "markers/right_zone"}
+    },
+    {
+      "id": "claw_target_marker",
+      "display_name": "claw target marker",
+      "type": "marker",
+      "color": "orange",
+      "default_size": "small",
+      "aliases": ["target marker", "claw target"],
+      "cyberwave_ref": {"asset_key": "markers/claw_target"}
+    }
+  ]
+}

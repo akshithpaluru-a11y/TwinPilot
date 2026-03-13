@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "project_id": "",
+  "environment_id": "",
+  "twin_id": "",
+  "scene_id": "",
+  "api_base": "",
+  "default_condition": "demo_showcase_scene",
+  "use_openai_planner": true,
+  "openai_model": "gpt-5-mini",
+  "notes": "Set OPENAI_API_KEY for planning and CYBERWAVE_API_TOKEN plus scene identifiers only on a real CyberWave-connected demo machine."
+}

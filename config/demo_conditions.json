@@ -1,0 +1,156 @@
+{
+  "conditions": [
+    {
+      "name": "bottle_left_cup_right",
+      "notes": "Basic two-object showcase with clear left/right separation.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "left"},
+        {"asset_id": "blue_cup", "zone": "right"}
+      ]
+    },
+    {
+      "name": "cup_center_block_left",
+      "notes": "Cup in the center with a block parked on the left.",
+      "objects": [
+        {"asset_id": "blue_cup", "zone": "center"},
+        {"asset_id": "green_block", "zone": "left"}
+      ]
+    },
+    {
+      "name": "two_bottles_left_and_right",
+      "notes": "Intentional ambiguity test with two bottle instances.",
+      "objects": [
+        {"asset_id": "black_bottle", "instance_id": "black_bottle_left", "zone": "left"},
+        {"asset_id": "black_bottle", "instance_id": "black_bottle_right", "zone": "right"}
+      ]
+    },
+    {
+      "name": "bottle_near_edge",
+      "notes": "Bottle staged at the table edge for a precision pickup story.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "left", "metadata": {"pose_hint": "near_edge"}}
+      ]
+    },
+    {
+      "name": "object_in_drop_zone",
+      "notes": "The tray is in center and the cube is already near the drop target.",
+      "objects": [
+        {"asset_id": "gray_tray", "zone": "center"},
+        {"asset_id": "red_cube", "zone": "center", "metadata": {"drop_zone": true}}
+      ]
+    },
+    {
+      "name": "cluttered_table_simple",
+      "notes": "Three objects for a slightly busier tabletop scene.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "left"},
+        {"asset_id": "blue_cup", "zone": "center"},
+        {"asset_id": "red_cube", "zone": "right"}
+      ]
+    },
+    {
+      "name": "single_black_bottle_center",
+      "notes": "Single-target scene for a straightforward pick-and-place.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "center"}
+      ]
+    },
+    {
+      "name": "blue_cup_right",
+      "notes": "Single blue cup on the right side.",
+      "objects": [
+        {"asset_id": "blue_cup", "zone": "right"}
+      ]
+    },
+    {
+      "name": "empty_workspace",
+      "notes": "No active objects. Useful for planner rejection and reset demos.",
+      "objects": []
+    },
+    {
+      "name": "bottle_and_cube",
+      "notes": "Bottle and cube sharing the table without ambiguity.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "center"},
+        {"asset_id": "red_cube", "zone": "left"}
+      ]
+    },
+    {
+      "name": "cube_stack_left",
+      "notes": "Two cubes stacked conceptually on the left side.",
+      "objects": [
+        {"asset_id": "red_cube", "instance_id": "red_cube_bottom", "display_name": "red cube", "zone": "left"},
+        {"asset_id": "green_block", "instance_id": "green_block_top", "display_name": "green block", "zone": "left", "metadata": {"stacked_on": "red_cube_bottom"}}
+      ]
+    },
+    {
+      "name": "cup_in_center_zone",
+      "notes": "Cup already in the center target zone.",
+      "objects": [
+        {"asset_id": "blue_cup", "zone": "center"}
+      ]
+    },
+    {
+      "name": "bottle_in_target_zone_already",
+      "notes": "Bottle already staged in the right zone.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "right"}
+      ]
+    },
+    {
+      "name": "two_objects_same_zone",
+      "notes": "Two different objects both starting on the left.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "left"},
+        {"asset_id": "blue_cup", "zone": "left"}
+      ]
+    },
+    {
+      "name": "object_blocking_target",
+      "notes": "A block is parked with the bottle to create a story around obstruction.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "center"},
+        {"asset_id": "green_block", "zone": "center", "metadata": {"blocking": "black_bottle"}}
+      ]
+    },
+    {
+      "name": "pick_and_place_basic",
+      "notes": "Simple bottle move from left to right showcase.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "left"}
+      ]
+    },
+    {
+      "name": "pick_and_place_reverse",
+      "notes": "Simple cup move from right to left showcase.",
+      "objects": [
+        {"asset_id": "blue_cup", "zone": "right"}
+      ]
+    },
+    {
+      "name": "reset_home_scene",
+      "notes": "Minimal scene to reset the claw and reintroduce the workspace.",
+      "objects": [
+        {"asset_id": "gray_tray", "zone": "center"}
+      ]
+    },
+    {
+      "name": "demo_showcase_scene",
+      "notes": "Primary polished demo scene with clear objects and a strong planner story.",
+      "objects": [
+        {"asset_id": "black_bottle", "zone": "center"},
+        {"asset_id": "blue_cup", "zone": "left"},
+        {"asset_id": "red_cube", "zone": "right"}
+      ]
+    },
+    {
+      "name": "ambiguity_test_scene",
+      "notes": "Multiple cups and a bottle to trigger clarification behavior.",
+      "objects": [
+        {"asset_id": "blue_cup", "instance_id": "blue_cup_left", "display_name": "blue cup", "zone": "left"},
+        {"asset_id": "blue_cup", "instance_id": "blue_cup_center", "display_name": "blue cup", "zone": "center"},
+        {"asset_id": "black_bottle", "zone": "right"}
+      ]
+    }
+  ]
+}

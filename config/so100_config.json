@@ -1,0 +1,15 @@
+{
+  "backend_type": "lerobot_so100",
+  "robot_type": "so100",
+  "teleop_type": "",
+  "follower_port": "",
+  "leader_port": "",
+  "robot_id": "follower_1",
+  "home_on_connect": false,
+  "default_dry_run": true,
+  "require_connection_before_execute": true,
+  "allow_real_execution": false,
+  "use_lerobot_backend": true,
+  "camera_index": -1,
+  "notes": "Enable allow_real_execution only after the LeRobot backend is installed and validated on the machine connected to the SO100."
+}
